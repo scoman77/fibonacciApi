@@ -1,0 +1,10 @@
+defmodule fibonacciApi.Repo do
+  use Ecto.Repo,
+    otp_app: :"fibonacciApi",
+    adapter: Ecto.Adapters.Postgres,
+    config :fibonacciApi, Repo,
+  database: "ecto_simple",
+  username: "postgres",
+  password: "asdf",
+  hostname: "localhost"
+end
