@@ -1,0 +1,30 @@
+<h1>Listing Numbers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Extra</th>
+      <th>Shown</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for number <- @numbers do %>
+    <tr>
+      <td><%= number.value %></td>
+      <td><%= number.extra %></td>
+      <td><%= number.shown %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.number_path(@conn, :show, number) %></span>
+        <span><%= link "Edit", to: Routes.number_path(@conn, :edit, number) %></span>
+        <span><%= link "Delete", to: Routes.number_path(@conn, :delete, number), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Number", to: Routes.number_path(@conn, :new) %></span>
