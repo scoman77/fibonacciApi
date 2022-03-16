@@ -1,0 +1,5 @@
+<h1>New Number</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.number_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.number_path(@conn, :index) %></span>

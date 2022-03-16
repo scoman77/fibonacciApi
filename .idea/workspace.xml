@@ -1,21 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="656e36e9-c61c-4509-a519-5406ea82a769" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/lib/fibonacciApi/items/item.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fibonacciApi_web/controllers/items_controller.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/items/index.html.eex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fibonacciApi_web/views/items_view.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priv/repo/items.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fibonacciApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fibonacciApi.iml" afterDir="false" />
+    <list default="true" id="656e36e9-c61c-4509-a519-5406ea82a769" name="Changes" comment="initial 2">
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/.formatter.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/assets/css/phoenix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/assets/vendor/topbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/config/config.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/config/dev.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/config/prod.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/config/runtime.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/config/test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/application.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/items.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/items/number.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/mailer.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/number_generator.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/repo.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/controllers/number_controller.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/controllers/page_controller.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/endpoint.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/gettext.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/router.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/telemetry.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/layout/app.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/layout/live.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/layout/root.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/number/edit.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/number/form.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/number/index.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/number/new.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/number/show.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/templates/page/index.html.heex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/views/error_helpers.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/views/error_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/views/layout_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/views/number_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi_web/views/page_view.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/mix.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/mix.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/gettext/en/LC_MESSAGES/errors.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/gettext/errors.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/repo/migrations/.formatter.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/repo/migrations/20220316045145_create_numbers.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/repo/seeds.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/static/images/phoenix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/priv/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi/items_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi_web/controllers/number_controller_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi_web/controllers/page_controller_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi_web/views/error_view_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi_web/views/layout_view_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/fibonacciApi_web/views/page_view_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/support/channel_case.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/support/conn_case.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/support/data_case.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/support/fixtures/items_fixtures.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fibonacciApi/test/test_helper.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/castore.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/connection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/cowboy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/cowboy_telemetry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/cowlib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/db_connection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/decimal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ecto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ecto_sql.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/esbuild.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/file_system.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/floki.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gettext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/html_entities.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jason.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_ecto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_html.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_live_dashboard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_live_reload.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_live_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_pubsub.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/phoenix_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/plug.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/plug_cowboy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/plug_crypto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgrex.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ranch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/swoosh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/telemetry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/telemetry_metrics.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/telemetry_poller.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/items.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fibonacciApi/items.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fibonacciApi_web/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/phoenix.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/topbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/runtime.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/test.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fibonacciApi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/application.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/items.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/items/item.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/mailer.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi/repo.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/controllers/items_controller.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/controllers/page_controller.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/endpoint.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/gettext.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/router.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/telemetry.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/items/index.html.eex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/layout/app.html.heex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/layout/live.html.heex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/layout/root.html.heex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/templates/page/index.html.heex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/views/error_helpers.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/views/error_view.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/views/items_view.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/views/layout_view.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fibonacciApi_web/views/page_view.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/gettext/en/LC_MESSAGES/errors.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/gettext/errors.pot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/repo/items.eex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/repo/migrations/.formatter.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/repo/migrations/20220310210027_add_items.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/repo/seeds.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/static/assets/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/static/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/static/images/phoenix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/priv/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fibonacciApi_web/controllers/page_controller_test.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fibonacciApi_web/views/error_view_test.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fibonacciApi_web/views/layout_view_test.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fibonacciApi_web/views/page_view_test.exs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/channel_case.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/conn_case.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/data_case.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.exs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Elixir Module" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -54,6 +203,14 @@
       <force-push-target remote-path="origin" branch="initial" />
     </force-push-targets>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi" />
+      <recent name="$PROJECT_DIR$/fibonacciApi/lib" />
+      <recent name="$PROJECT_DIR$/fibonacciApi" />
+      <recent name="$PROJECT_DIR$/fibonacciApi/lib/fibonacciApi/generator" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +221,8 @@
       <updated>1646947139585</updated>
       <workItem from="1646947141631" duration="5000" />
       <workItem from="1646947185119" duration="2164000" />
-      <workItem from="1646952031001" duration="1349000" />
+      <workItem from="1646952031001" duration="4312000" />
+      <workItem from="1647375244613" duration="3496000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1646947447041</created>
@@ -73,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646947447041</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial 2">
+      <created>1646956498372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646956498372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +258,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="initial 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 2" />
   </component>
 </project>

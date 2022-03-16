@@ -1,0 +1,23 @@
+<h1>Show Number</h1>
+
+<ul>
+
+  <li>
+    <strong>Value:</strong>
+    <%= @number.value %>
+  </li>
+
+  <li>
+    <strong>Extra:</strong>
+    <%= @number.extra %>
+  </li>
+
+  <li>
+    <strong>Shown:</strong>
+    <%= @number.shown %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.number_path(@conn, :edit, @number) %></span> |
+<span><%= link "Back", to: Routes.number_path(@conn, :index) %></span>
