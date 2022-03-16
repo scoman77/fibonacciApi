@@ -101,4 +101,8 @@ defmodule FibonacciApi.Items do
   def change_number(%Number{} = number, attrs \\ %{}) do
     Number.changeset(number, attrs)
   end
+
+  def list_all_fibonacci_numbers_interval(number) do
+    Repo.delete(number)
+  end
 end

@@ -20,6 +20,12 @@ defmodule FibonacciApiWeb.Router do
     resources "/numbers", NumberController
   end
 
+  scope "/api", FibonacciApiWeb do
+    pipe_through :api
+    get "/number", NumberController, :index
+    get "/numbers", NumbersController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", FibonacciApiWeb do
   #   pipe_through :api
