@@ -7,7 +7,10 @@ defmodule FibonacciApiWeb.Router do
 
   scope "/api", FibonacciApiWeb do
     pipe_through :api
-    resources "/numbers", NumberController, except: [:new, :edit]
+    resources "/add", NumberController, except: [:new, :edit]
+    resources "/remove", NumberController, except: [:new, :edit]
+    get "/number", NumberController, except: [:new, :edit]
+    get "/sequence", NumbersController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development

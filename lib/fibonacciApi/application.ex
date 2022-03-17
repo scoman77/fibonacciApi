@@ -15,9 +15,14 @@ defmodule FibonacciApi.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: FibonacciApi.PubSub},
       # Start the Endpoint (http/https)
-      FibonacciApiWeb.Endpoint
+      FibonacciApiWeb.Endpoint,
       # Start a worker by calling: FibonacciApi.Worker.start_link(arg)
       # {FibonacciApi.Worker, arg}
+      Plug.Cowboy.child_spec(
+        scheme: :http,
+        plug: FibonacciApi,
+        options: [port: 4000]
+      )
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
