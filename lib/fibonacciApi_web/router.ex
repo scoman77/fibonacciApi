@@ -1,16 +1,19 @@
 defmodule FibonacciApiWeb.Router do
   use FibonacciApiWeb, :router
 
+  alias FibonacciApi
+
   pipeline :api do
     plug :accepts, ["json"]
   end
-
+##[:index, :new, :show]
+##[:create, :update]
   scope "/api", FibonacciApiWeb do
     pipe_through :api
-    resources "/add", NumberController, except: [:new, :edit]
-    resources "/remove", NumberController, except: [:new, :edit]
-    get "/number", NumberController, except: [:new, :edit]
-    get "/sequence", NumbersController, except: [:new, :edit]
+    resources "/add:id", NumberController, except: [:edit, :delete, :update]
+    resources "/remove:id", NumberController, except: [:new, :edit, :update]
+    resources "/number:id", NumberController
+    resources "/sequence", NumbersController
   end
 
   # Enables LiveDashboard only for development

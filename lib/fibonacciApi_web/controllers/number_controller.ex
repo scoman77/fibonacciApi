@@ -3,6 +3,7 @@ defmodule FibonacciApiWeb.NumberController do
 
   alias FibonacciApi.Items
   alias FibonacciApi.Items.Number
+  alias FibonacciApi.NumberGenerator
 
   action_fallback FibonacciApiWeb.FallbackController
 
@@ -23,6 +24,8 @@ defmodule FibonacciApiWeb.NumberController do
   def show(conn, %{"id" => id}) do
     number = Items.get_number!(id)
     render(conn, "show.json", number: number)
+    ##number = NumberGenerator.compute(Integer.parse(id))
+    ##number
   end
 
   def update(conn, %{"id" => id, "number" => number_params}) do

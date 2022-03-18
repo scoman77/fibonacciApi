@@ -3,17 +3,15 @@ defmodule FibonacciApi.Items.Number do
   import Ecto.Changeset
 
   schema "numbers" do
-    field :blacklisted, :boolean, default: false
-    field :description, :string
     field :value, :integer
-
+    field :blacklisted, :boolean, default: false
     timestamps()
   end
 
   @doc false
   def changeset(number, attrs) do
     number
-    |> cast(attrs, [:value, :description, :blacklisted])
-    |> validate_required([:value, :description, :blacklisted])
+    |> cast(attrs, [:value, :blacklisted])
+    |> validate_required([:value, :blacklisted])
   end
 end

@@ -5,11 +5,11 @@ defmodule FibonacciApiWeb.NumbersController do
   alias FibonacciApi.Items.Number
   alias FibonacciApi.NumbersGenerator
 
-  action_fallback FibonacciApiWeb.FallbackController
+#  action_fallback FibonacciApiWeb.FallbackController
 
   def index(conn, _params) do
     numbers = NumbersGenerator.fibonacci_do(200)
-    numbers
+    render(conn, "numbers.json", numbers: numbers)
   end
 
   def create(conn, %{"number" => number_params}) do
@@ -21,9 +21,11 @@ defmodule FibonacciApiWeb.NumbersController do
     end
   end
 
-  def show( %{"id" => id}) do
-    number = NumbersGenerator.fibonacci(id)
-    render(number)
+  def show(conn, %{"id" => id}) do
+    numbers = NumbersGenerator.fibonacci_do(String.to_integer(id))
+    render(conn, "numbers.json", numbers: numbers)
+    ##number = NumberGenerator.compute(Integer.parse(id))
+    ##number
   end
 
   def update(conn, %{"id" => id, "number" => number_params}) do
